@@ -38,3 +38,4 @@ let id=4568
 // console.log(1+"2")
 
 // this is the basic operators in javaScript
+
