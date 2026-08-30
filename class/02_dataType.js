@@ -35,3 +35,7 @@ const myfunction = function(){
 console.table({name,myboolean,num,temp,userEmail,number,id,userId,heroes,myobj,myfunction})
 
 console.log(id===userId)
+
+// stack (premitive) , heap (non premitive)
+// in heap or non premitive data type we change or update value of  origin
+// data while in stack we chnage or update value of copy or duplicate data 
