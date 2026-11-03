@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project04</title>
+</head>
+
+<style>
+    body{
+    height:90vh;
+    width:90vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    #wrapper{
+        height: 60vh;
+        width: 70vw;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       background-color: grey;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    input{
+        margin: 10px;
+    }
+    #subt{
+        height: 30px;
+        width: 100px;
+        background-color: black;
+        color: white;
+        
+        border: none;
+    }
+     #subt:hover{
+        color: rgb(205, 192, 192);
+background-color: rgb(81, 79, 79);
+    }
+    .guessField{
+        height: 30px;
+        font-size: 20px;
+        border: none;
+        transition: none;
+        transform: none;
+        box-shadow: none;
+       
+    }
+    .guessField:focus{
+         -webkit-transition: none;
+        transition: none;
+    }
+    h1{
+        
+    }
+</style>
+<body>
+    <div id="wrapper">
+        <h1>Number gussing game</h1>
+        <p>Try and guess a random number between 1 and 100</p>
+        <p>You have 10 attempts to guess the right number.</p>
+        <br>
+        <form action="" class="form">
+
+            <label for="" id="guess">Guess a number</label>
+            <input type="text" id="guessField" class="guessField">
+            <input type="submit" id="subt" class="guessSubmit">
+        </form>
+
+        <div class="resultParas">
+            <p>Previous Guesses<span class="guesses"></span></p>
+            <p>Guesses Remaining: <span class="lastResult">10</span></p>
+            <p class="lowOrhi"></p>
+        </div>
+    </div>
+</body>
+<script></script>
+</html>
