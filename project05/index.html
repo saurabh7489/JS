@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        background-color: grey;
+       
+        
+    }
+    nav{
+        background-color: black;
+color: aliceblue;
+font-size: 30px;
+padding: 20px;
+    }
+    .content{
+        height: 70vh;
+        width: 100vw;
+        margin-top: 20px;
+       display: flex;
+       flex-direction: column;
+    align-items: center;
+       
+    }
+    .form{
+        
+        height: 20vh;
+         width: 50vh;
+        background-color: black;
+        color: aliceblue;
+         display: flex;
+       flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .result{
+        background-color: black;
+        color: white;
+        width: 50vh;
+        padding: 20px;
+        margin-top: 20px;
+        visibility: hidden;
+    }
+</style>
+<body>
+    <nav>
+        <span class="todo">todo</span>
+       
+
+    </nav>
+    <div class="content">
+        <form class="form" action="">
+<p><label for="">todo : </label><input class="text" type="text"></p>
+<p>
+<input class="submit" type="submit" name="" id="">
+</p>
+</form>
+<div class="result">
+    
+</div>
+    </div>
+    
+</body>
+<script>
+const form = document.querySelector('.form');
+const result = document.querySelector('.result');
+console.log(form)
+
+form.addEventListener('submit',function(e){
+    e.preventDefault();
+    const text= document.querySelector('.text');
+
+result.style.visibility='visible';
+    console.log(text);
+    result.textContent=text.value;
+    
+
+})
+
+</script>
+</html>
